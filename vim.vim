@@ -104,16 +104,16 @@ call plug#begin()
   Plug 'vim-scripts/matchit.zip'
 call plug#end()
 
-inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<CR>"
+inoremap <expr> <Tab> pumvisible() ? "\<C-y>" : "\<Tab><CR>{<CR>}<C-o>O"
+
 nnoremap <silent> <C-T> :rightb vert term<CR>
 
 " use <tab> for trigger completion and navigate to the next complete item
 
-inoremap <c-b> <Esc>:NERDTreeToggle<cr>
-nnoremap <c-b> <Esc>:NERDTreeToggle<cr>
+inoremap <C-b> <Esc>:NERDTreeToggle<CR>
+nnoremap <C-b> <Esc>:NERDTreeToggle<CR>
 set termguicolors
 colorscheme dracula
-
 
 "python
 
