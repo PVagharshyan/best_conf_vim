@@ -1,15 +1,5 @@
-nnoremap <silent> <C-F5> :w<CR>:!g++ *.cpp -o output && ./output<CR>
-vnoremap <silent> <C-F5> :w<CR>:!g++ *.cpp -o output && ./output<CR>
-nnoremap <silent> <C-F4> :w<CR>:!gcc % -o output && ./output<CR>
-vnoremap <silent> <C-F4> :w<CR>:!gcc % -o output && ./output<CR>
 nnoremap <C-p> <Esc>:w<CR>:!python %<CR>
 vnoremap <C-p> <Esc>:w<CR>:!python %<CR>
-
-syntax on
-set number
-filetype plugin indent on
-set nocompatible
-set ts=4 et sts=4 sw=4 ai si
 
 "python
 
@@ -103,17 +93,6 @@ call plug#begin()
   Plug 'rosenfeld/conque-term'
   Plug 'vim-scripts/matchit.zip'
 call plug#end()
-
-inoremap <expr> <Tab> pumvisible() ? "\<C-y>" : "\<Tab><CR>{<CR>}<C-o>O"
-
-nnoremap <silent> <C-T> :rightb vert term<CR>
-
-" use <tab> for trigger completion and navigate to the next complete item
-
-inoremap <C-b> <Esc>:NERDTreeToggle<CR>
-nnoremap <C-b> <Esc>:NERDTreeToggle<CR>
-set termguicolors
-colorscheme dracula
 
 "python
 

@@ -2,8 +2,6 @@ nnoremap <silent> <C-F5> :w<CR>:!g++ *.cpp -o output && ./output<CR>
 vnoremap <silent> <C-F5> :w<CR>:!g++ *.cpp -o output && ./output<CR>
 nnoremap <silent> <C-F4> :w<CR>:!gcc % -o output && ./output<CR>
 vnoremap <silent> <C-F4> :w<CR>:!gcc % -o output && ./output<CR>
-nnoremap <C-p> <Esc>:w<CR>:!python %<CR>
-vnoremap <C-p> <Esc>:w<CR>:!python %<CR>
 
 syntax on
 set number
