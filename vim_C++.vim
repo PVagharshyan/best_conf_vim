@@ -56,7 +56,10 @@ call plug#begin()
 call plug#end()
 
 
-inoremap <expr> <Tab> pumvisible() ? "\<C-y>" : "\<Tab><CR>{<CR>}<C-o>O"
+let g:auto_pairs_skip_coc = 1
+let g:AutoPairsShortcutToggle = '<M-Space>'
+let g:AutoPairsMapCR = 0
+inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 
 nnoremap <silent> <C-T> :rightb vert term<CR>
 
@@ -66,5 +69,7 @@ inoremap <C-b> <Esc>:NERDTreeToggle<CR>
 nnoremap <C-b> <Esc>:NERDTreeToggle<CR>
 set termguicolors
 colorscheme dracula
+
+
 
 
