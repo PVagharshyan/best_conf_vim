@@ -1,5 +1,8 @@
-nnoremap <C-p> <Esc>:w<CR>:!python %<CR>
-vnoremap <C-p> <Esc>:w<CR>:!python %<CR>
+nnoremap <C-F5> <Esc>:w<CR>:!python %<CR>
+vnoremap <C-F5> <Esc>:w<CR>:!python %<CR>
+inoremap <C-b> <Esc>:NERDTreeToggle<CR>
+nnoremap <C-b> <Esc>:NERDTreeToggle<CR>
+nnoremap <silent> <C-T> :rightb vert term<CR>
 
 "python
 
