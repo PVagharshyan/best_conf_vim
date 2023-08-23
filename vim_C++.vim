@@ -63,13 +63,10 @@ inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 
 nnoremap <silent> <C-T> :rightb vert term<CR>
 
-" use <tab> for trigger completion and navigate to the next complete item
-
 inoremap <C-b> <Esc>:NERDTreeToggle<CR>
 nnoremap <C-b> <Esc>:NERDTreeToggle<CR>
 set termguicolors
 colorscheme dracula
-
 
 
 
